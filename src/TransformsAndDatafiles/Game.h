@@ -25,6 +25,7 @@ private:
 	sf::Clock fpsClock;
 	Text * fpsText;
 	float lastTime = 0;
+	float oneSecond = 0;
 	sf::RenderWindow window;
 	stringstream ss;
 
