@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "SceneManager.h"
 #include <iostream>
 
 
@@ -11,7 +12,8 @@ Game::Game() :
 
 void Game::load()
 {
-	fpsText = new Text("../../TransformsAndDatafiles/Assets/ABeeZee-Regular.ttf", "", 20.0f, sf::Color::White, getWindowSize().x / 1000, getWindowSize().y / 1000);
+	//player = new Player();
+	fpsText = new Text("../../TransformsAndDatafiles/Assets/ABeeZee-Regular.ttf", "", 20.0f, sf::Color::White, getWindowSize().x / 400, getWindowSize().y / 2000);
 
 
 	run();

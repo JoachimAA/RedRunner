@@ -5,6 +5,7 @@
 
 #include <SFML\Graphics.hpp>
 #include "Text.h"
+#include "Player.h"
 #include <sstream>
 
 
