@@ -12,9 +12,11 @@ Game::Game() :
 
 void Game::load()
 {
-	//player = new Player();
-	fpsText = new Text("../../TransformsAndDatafiles/Assets/ABeeZee-Regular.ttf", "", 20.0f, sf::Color::White, getWindowSize().x / 400, getWindowSize().y / 2000);
+	//creating scene manager and loading new scene
+	m_sceneManager = new SceneManager();
+	m_sceneManager->loadScene();
 
+	fpsText = new Text("../../TransformsAndDatafiles/Assets/ABeeZee-Regular.ttf", "", 20.0f, sf::Color::White, getWindowSize().x / 400, getWindowSize().y / 2000);
 
 	run();
 }
@@ -62,11 +64,21 @@ void Game::update(sf::RenderWindow & window)
 		oneSecond = 0;
 	}
 	/////////////////////////
+
+
+	m_sceneManager->updateScene(window);
+
+
+
+
 }
 
 void Game::render(sf::RenderWindow & window)
 {
+
+	m_sceneManager->renderScene(window);
 	fpsText->render(window);
+
 	window.display();
 	
 }

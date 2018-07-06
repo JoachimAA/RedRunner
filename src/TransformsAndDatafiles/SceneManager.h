@@ -1,1 +1,22 @@
 #pragma once
+#include <SFML\Graphics.hpp>
+#include "Scene.h"
+#include "ScrollScene.h"
+
+class SceneManager {
+
+public: 
+
+	void SceneManager::loadScene();
+	void SceneManager::renderScene(sf::RenderWindow &window);
+	void SceneManager::updateScene(sf::RenderWindow &window);
+
+
+
+
+private:
+
+	int m_currentScene;
+	std::vector<Scene*> m_scenes;
+
+};

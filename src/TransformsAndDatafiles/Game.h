@@ -4,6 +4,7 @@
 #define GAME_H
 
 #include <SFML\Graphics.hpp>
+#include "SceneManager.h"
 #include "Text.h"
 #include "Player.h"
 #include <sstream>
@@ -29,6 +30,7 @@ private:
 	float oneSecond = 0;
 	sf::RenderWindow window;
 	stringstream ss;
+	SceneManager * m_sceneManager;
 
 };
 

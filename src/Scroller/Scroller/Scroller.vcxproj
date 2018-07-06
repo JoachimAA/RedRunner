@@ -117,16 +117,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\TransformsAndDatafiles\Background.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Game.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\GameObject.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\main.cpp" />
+    <ClCompile Include="..\..\TransformsAndDatafiles\parallaxBackground.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Player.cpp" />
+    <ClCompile Include="..\..\TransformsAndDatafiles\SceneManager.cpp" />
+    <ClCompile Include="..\..\TransformsAndDatafiles\ScrollScene.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Text.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\TransformsAndDatafiles\Background.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\Game.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\GameObject.h" />
+    <ClInclude Include="..\..\TransformsAndDatafiles\parallaxBackground.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\Player.h" />
+    <ClInclude Include="..\..\TransformsAndDatafiles\Scene.h" />
+    <ClInclude Include="..\..\TransformsAndDatafiles\SceneManager.h" />
+    <ClInclude Include="..\..\TransformsAndDatafiles\ScrollScene.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\Text.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

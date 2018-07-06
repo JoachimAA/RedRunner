@@ -1,4 +1,5 @@
 #include "GameObject.h"
+#include <iostream>
 
 float GameObject::getXPos()
 {
@@ -19,3 +20,5 @@ void GameObject::setYPos(float yPosIn)
 {
 	yPos = yPosIn;
 }
+
+
