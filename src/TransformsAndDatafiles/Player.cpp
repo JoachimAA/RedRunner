@@ -28,4 +28,22 @@ void Player::loadTexture(std::string textureNameIn)
 	}
 }
 
+float Player::getXPos()
+{
+	return 0.0f;
+}
+
+float Player::getYPos()
+{
+	return 0.0f;
+}
+
+void Player::setXPos(float xPosIn)
+{
+}
+
+void Player::setYPos(float yPosIn)
+{
+}
+
 

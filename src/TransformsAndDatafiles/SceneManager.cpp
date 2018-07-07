@@ -1,12 +1,12 @@
 #include "SceneManager.h"
 
-void SceneManager::loadScene()
+void SceneManager::loadScene(sf::Vector2u screenSize)
 {
 
 	m_scenes.push_back(new ScrollScene());
 	m_currentScene = 0;
 
-	m_scenes[m_currentScene]->load();
+	m_scenes[m_currentScene]->load(screenSize);
 }
 
 void SceneManager::renderScene(sf::RenderWindow &window)

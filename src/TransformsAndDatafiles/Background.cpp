@@ -23,7 +23,7 @@ void Background::loadTexture(std::string textureNameIn)
 
 void Background::render(sf::RenderWindow & window)
 {
-	window.draw(m_background);
+	window.draw(getBackground());
 }
 
 void Background::update(sf::RenderWindow & window)
@@ -38,5 +38,32 @@ void Background::setSpeed(float speed)
 float Background::getSpeed()
 {
 	return m_speed;
+}
+
+sf::RectangleShape Background::getBackground()
+{
+	return m_background;
+}
+
+float Background::getXPos()
+{
+	return xPos;
+}
+
+float Background::getYPos()
+{
+	return yPos;
+}
+
+void Background::setXPos(float xPosIn)
+{
+	xPos = xPosIn;
+	m_background.setPosition(sf::Vector2f(xPosIn, m_background.getPosition().y));
+}
+
+void Background::setYPos(float yPosIn)
+{
+	yPos = yPosIn;
+	m_background.setPosition(sf::Vector2f(m_background.getPosition().x, yPosIn));
 }
 

@@ -27,9 +27,6 @@
     <ClCompile Include="..\..\TransformsAndDatafiles\Text.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\TransformsAndDatafiles\GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\TransformsAndDatafiles\ScrollScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

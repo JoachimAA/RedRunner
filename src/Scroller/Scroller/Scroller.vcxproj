@@ -119,7 +119,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\TransformsAndDatafiles\Background.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Game.cpp" />
-    <ClCompile Include="..\..\TransformsAndDatafiles\GameObject.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\main.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\parallaxBackground.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Player.cpp" />

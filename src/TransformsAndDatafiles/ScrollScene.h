@@ -10,7 +10,7 @@ class ScrollScene : public Scene {
 public:
 
 
-	void load() override;
+	void load(sf::Vector2u screenSize) override;
 	void render(sf::RenderWindow &window) override;
 	int update(sf::RenderWindow &window) override;
 

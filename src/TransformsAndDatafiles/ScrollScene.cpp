@@ -1,9 +1,9 @@
 #include "ScrollScene.h"
 
-void ScrollScene::load()
+void ScrollScene::load(sf::Vector2u screenSize)
 {
-	m_player = new Player(100.0f, 100.0f, 20.0f, 20.0f, "../../TransformsAndDatafiles/Assets/ninja.png");
-	m_parallaxBackground = new ParallaxBackground();
+	m_player = new Player(640.0f, 544.0f, 20.0f, 20.0f, "../../TransformsAndDatafiles/Assets/ninja.png");
+	m_parallaxBackground = new ParallaxBackground(screenSize.x, screenSize.y);
 }
 
 void ScrollScene::render(sf::RenderWindow &window)

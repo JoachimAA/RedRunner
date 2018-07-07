@@ -11,6 +11,13 @@ public:
 	void Player::render(sf::RenderWindow &window);
 	void Player::loadTexture(std::string textureNameIn);
 
+
+
+	float getXPos() override;
+	float getYPos() override;
+	void setXPos(float xPosIn) override;
+	void setYPos(float yPosIn) override;
+
 private:
 
 	float xSize;

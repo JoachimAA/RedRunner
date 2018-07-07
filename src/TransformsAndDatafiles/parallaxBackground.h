@@ -5,7 +5,7 @@ class ParallaxBackground {
 
 public :
 
-	ParallaxBackground();
+	ParallaxBackground(float screenSizeX, float screenSizeY);
 	void ParallaxBackground::update();
 	void ParallaxBackground::render(sf::RenderWindow & window);
 	
@@ -15,8 +15,8 @@ private :
 	Background * m_background;
 	std::vector<Background*> m_parallaxBackgroundVector;
 
-	float focalPointSpeed = 5.0f;
-	float layerdifference = 0.5f;
+	float focalPointSpeed = -0.2f;
+	float layerdifference = -0.6f;
 
 
 };

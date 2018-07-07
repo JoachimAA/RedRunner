@@ -14,6 +14,12 @@ public:
 	void Background::update(sf::RenderWindow & window);
 	void Background::setSpeed(float speed);
 	float Background::getSpeed();
+	sf::RectangleShape getBackground();
+
+	float getXPos() override;
+	float getYPos() override;
+	void setXPos(float xPosIn) override;
+	void setYPos(float yPosIn) override;
 
 
 

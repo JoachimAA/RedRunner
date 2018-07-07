@@ -7,7 +7,7 @@ class SceneManager {
 
 public: 
 
-	void SceneManager::loadScene();
+	void SceneManager::loadScene(sf::Vector2u screenSize);
 	void SceneManager::renderScene(sf::RenderWindow &window);
 	void SceneManager::updateScene(sf::RenderWindow &window);
 

@@ -14,7 +14,7 @@ void Game::load()
 {
 	//creating scene manager and loading new scene
 	m_sceneManager = new SceneManager();
-	m_sceneManager->loadScene();
+	m_sceneManager->loadScene(window.getSize());
 
 	fpsText = new Text("../../TransformsAndDatafiles/Assets/ABeeZee-Regular.ttf", "", 20.0f, sf::Color::White, getWindowSize().x / 400, getWindowSize().y / 2000);
 
@@ -55,7 +55,7 @@ void Game::update(sf::RenderWindow & window)
 
 	
 	oneSecond += currentTime;
-	cout << oneSecond << endl;
+	//cout << oneSecond << endl;
 	if (oneSecond > 0.1f) {
 		int n = static_cast<int>(fps);
 		ss << n;

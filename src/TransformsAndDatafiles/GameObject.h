@@ -6,11 +6,10 @@
 class GameObject {
 public:
 
-	float GameObject::getXPos();
-	float GameObject::getYPos();
-	void GameObject::setXPos(float xPosIn);
-	void GameObject::setYPos(float yPosIn);
-	void GameObject::loadTexture(sf::Texture textureIn, std::string textureNameIn);
+	virtual float getXPos() = 0;
+	virtual float getYPos() = 0;
+	virtual void setXPos(float xPosIn) = 0;
+	virtual void setYPos(float yPosIn) = 0;
 
 protected:
 	float xPos;
