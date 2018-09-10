@@ -33,7 +33,7 @@ void Game::run()
 			if (ev.type == sf::Event::Closed) window.close();
 		}
 
-		update(window);
+		update(window, ev);
 		render(window);
 
 		//clears screen
@@ -43,7 +43,7 @@ void Game::run()
 
 }
 
-void Game::update(sf::RenderWindow & window)
+void Game::update(sf::RenderWindow & window, sf::Event ev)
 {
 
 
@@ -66,7 +66,7 @@ void Game::update(sf::RenderWindow & window)
 	/////////////////////////
 
 
-	m_sceneManager->updateScene(window);
+	m_sceneManager->updateScene(window, ev);
 
 
 

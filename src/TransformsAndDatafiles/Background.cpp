@@ -8,6 +8,7 @@ Background::Background(float xPosition, float yPosition, float xSize, float ySiz
 	xPos = xPosition;
 	yPos = yPosition;
 	loadTexture(textureIn);
+	m_backgroundTexture.setSmooth(true);
 	m_background.setTexture(&m_backgroundTexture);
 
 }

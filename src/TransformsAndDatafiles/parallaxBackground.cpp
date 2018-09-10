@@ -20,16 +20,31 @@ ParallaxBackground::ParallaxBackground(float screenSizeX, float screenSizeY)
 
 }
 
-void ParallaxBackground::update()
+void ParallaxBackground::updateLeft()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		m_parallaxBackgroundVector[i]->setXPos(m_parallaxBackgroundVector[i]->getXPos() - m_parallaxBackgroundVector[i]->getSpeed());
+		//std::cout << m_parallaxBackgroundVector[i]->getXPos() << std::endl;
+
+		if (m_parallaxBackgroundVector[i]->getXPos() >= 1280)
+		{
+			m_parallaxBackgroundVector[i]->setXPos(-1280); 
+		}
+	}
+}
+
+
+void ParallaxBackground::updateRight()
 {
 	for (int i = 0; i < 10; i++)
 	{
 		m_parallaxBackgroundVector[i]->setXPos(m_parallaxBackgroundVector[i]->getXPos() + m_parallaxBackgroundVector[i]->getSpeed());
-		std::cout << m_parallaxBackgroundVector[i]->getXPos() << std::endl;
+		//std::cout << m_parallaxBackgroundVector[i]->getXPos() << std::endl;
 
 		if (m_parallaxBackgroundVector[i]->getXPos() <= -1280)
 		{
-			m_parallaxBackgroundVector[i]->setXPos(1280);
+			m_parallaxBackgroundVector[i]->setXPos(1280); 
 		}
 	}
 }

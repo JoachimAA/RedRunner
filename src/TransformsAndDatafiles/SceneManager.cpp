@@ -14,8 +14,8 @@ void SceneManager::renderScene(sf::RenderWindow &window)
 	m_scenes[m_currentScene]->render(window);
 }
 
-void SceneManager::updateScene(sf::RenderWindow &window)
+void SceneManager::updateScene(sf::RenderWindow &window, sf::Event ev)
 {
 
-	m_scenes[m_currentScene]->update(window);
+	m_scenes[m_currentScene]->update(window, ev);
 }

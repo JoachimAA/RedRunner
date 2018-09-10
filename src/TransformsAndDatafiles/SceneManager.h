@@ -9,7 +9,7 @@ public:
 
 	void SceneManager::loadScene(sf::Vector2u screenSize);
 	void SceneManager::renderScene(sf::RenderWindow &window);
-	void SceneManager::updateScene(sf::RenderWindow &window);
+	void SceneManager::updateScene(sf::RenderWindow &window  ,sf::Event ev);
 
 
 

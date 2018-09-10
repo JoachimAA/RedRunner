@@ -119,6 +119,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\TransformsAndDatafiles\Background.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Game.cpp" />
+    <ClCompile Include="..\..\TransformsAndDatafiles\InputHandler.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\main.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\parallaxBackground.cpp" />
     <ClCompile Include="..\..\TransformsAndDatafiles\Player.cpp" />
@@ -130,6 +131,7 @@
     <ClInclude Include="..\..\TransformsAndDatafiles\Background.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\Game.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\GameObject.h" />
+    <ClInclude Include="..\..\TransformsAndDatafiles\InputHandler.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\parallaxBackground.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\Player.h" />
     <ClInclude Include="..\..\TransformsAndDatafiles\Scene.h" />

@@ -18,7 +18,7 @@ public:
 	Game();
 	void load();
 	void run();
-	void update(sf::RenderWindow &window);
+	void update(sf::RenderWindow &window, sf::Event ev);
 	void render(sf::RenderWindow &window);
 	sf::Vector2u getWindowSize();
 

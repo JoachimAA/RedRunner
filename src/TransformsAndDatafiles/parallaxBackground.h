@@ -6,7 +6,8 @@ class ParallaxBackground {
 public :
 
 	ParallaxBackground(float screenSizeX, float screenSizeY);
-	void ParallaxBackground::update();
+	void ParallaxBackground::updateLeft();
+	void ParallaxBackground::updateRight();
 	void ParallaxBackground::render(sf::RenderWindow & window);
 	
 
