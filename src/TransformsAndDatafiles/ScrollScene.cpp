@@ -30,18 +30,10 @@ int ScrollScene::update(sf::RenderWindow & window, sf::Event event)
 		m_player->runRight(m_inputHandler->getEventTime());
 		return 0;
 	}
-	/*if (m_inputHandler->handleInput(event) == 1)
+	if (m_inputHandler->checkKeyDown(sf::Keyboard::Space))
 	{
-		m_parallaxBackground->updateLeft();
-		m_player->runLeft();
-		return 0;
+		m_player->jump(m_inputHandler->getEventTime());
 	}
-	if (m_inputHandler->handleInput(event) == 2)
-	{
-		m_parallaxBackground->updateRight();
-		m_player->runRight();
-		return 0;
-	}*/
 	m_player->notRun();
 	return 0;
 }

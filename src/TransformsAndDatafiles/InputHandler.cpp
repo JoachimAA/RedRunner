@@ -50,7 +50,7 @@ float InputHandler::getEventTime()
 		eventClock.restart();
 	}
 	eventTime = eventClock.getElapsedTime();
-	return eventTime.asSeconds();;
+	return eventTime.asSeconds();
 }
 
 void InputHandler::deleteKeyUp(sf::Keyboard::Key key)
