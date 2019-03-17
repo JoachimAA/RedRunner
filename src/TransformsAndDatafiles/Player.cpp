@@ -173,6 +173,26 @@ void Player::jump(float time)
 	}
 }
 
+float Player::getXPos()
+{
+	return xPos;
+}
+
+float Player::getYPos()
+{
+	return yPos;
+}
+
+void Player::setXPos(float xPosIn)
+{
+	m_player.setPosition(sf::Vector2f(xPosIn, getYPos()));
+}
+
+void Player::setYPos(float yPosIn)
+{
+	m_player.setPosition(sf::Vector2f(getXPos(), yPosIn));
+}
+
 void Player::notRun()
 {
 	if (m_negScale) {

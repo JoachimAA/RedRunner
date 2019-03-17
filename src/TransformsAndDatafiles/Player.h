@@ -17,6 +17,11 @@ public:
 	void notRun();
 	void jump(float time);
 
+	float getXPos() override;
+	float getYPos() override;
+	void setXPos(float xPosIn) override;
+	void setYPos(float yPosIn) override;
+
 private:
 
 	float xSize;
@@ -25,4 +30,6 @@ private:
 	bool m_firstPass = true;
 	sf::Sprite m_player;
 	sf::Texture m_playerTexture;
+
+
  };

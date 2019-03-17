@@ -2,7 +2,7 @@
 
 void ScrollScene::load(sf::Vector2u screenSize)
 {
-	m_player = new Player(640.0f, 542.0f, 20.0f, 20.0f, "../../TransformsAndDatafiles/Assets/ninjarun3.png");
+	m_player = new Player(640.0f, 542.0f, 20.0f, 20.0f, "../../TransformsAndDatafiles/Assets/NinjaSpriteSheet.png");
 	m_parallaxBackground = new ParallaxBackground(screenSize.x, screenSize.y);
 	m_inputHandler = new InputHandler();
 }
