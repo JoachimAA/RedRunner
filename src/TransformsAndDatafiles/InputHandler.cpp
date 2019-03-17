@@ -23,12 +23,10 @@ void InputHandler::checkInput(sf::Event ev)
 {
 	if (ev.type == sf::Event::KeyPressed)
 	{
-		std::cout << "key pressed " << std::endl;
 		addKeyDown(ev.key.code);
 	}
 	if (ev.type == sf::Event::KeyReleased)
 	{
-		std::cout << "key deleted " << std::endl;
 		deleteKeyUp(ev.key.code);
 	}
 

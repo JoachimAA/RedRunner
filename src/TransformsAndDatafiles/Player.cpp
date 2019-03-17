@@ -124,7 +124,6 @@ void Player::runRight(float time)
 
 	//m_player.setTextureRect(sf::IntRect(390, 452, 350, 450));
 	m_player.setScale(0.15f, 0.15f);
-	std::cout << time << std::endl;
 }
 
 void Player::jump(float time)
